@@ -1,0 +1,11 @@
+<h4 style="margin-top:50px; text-align:center">Enter the URL for the RSS that you want to read</h4>
+
+<div class="input-form">
+    <%= form_tag do %>
+            <div class="input-field col s6">
+                <%= label_tag(:input_url, "Enter the URL") %>
+                <%= text_field_tag(:input_url) %>
+            </div>
+            <div class="btn waves-effect waves-light light-blue accent-2"><%= submit_tag("Submit") %></div>
+    <% end %>
+</div>

@@ -1,0 +1,20 @@
+<% if @error == false %>
+
+    <div class="rss-items">
+    <% @array.each do |element| %>
+        <div class="item">
+            <div class="title"><%= element["title"].html_safe %></div>
+            <div class="date"><%= element["date"] %></div>
+            <div class="desc"><%= element["description"].html_safe %></div>
+            <br>
+            <div class="link"><%= link_to "read more...", element["link"] %></div>
+        </div>
+    <% end %>
+    </div>
+
+<% else %>
+
+    <h4 style="text-align:center"> Please enter a valid url</h4>
+    <h4 style="text-align:center"><%= link_to "Go Back", "/home/index" %></h4>
+
+<% end %>

@@ -1,0 +1,33 @@
+.input-form {
+    margin: 50px;
+    width: 60vw;
+    align-items: center;
+}
+
+.rss-items {
+    width: fit-content;
+    margin: auto;
+}
+
+.item {
+    border: solid black 1px;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 20px;
+    width: 50vw;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.desc {
+    font-size: 1.1rem;
+}
